@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Include your external CSS file -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Include Boxicons CSS library -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Log In Container -->
+
+    <div id="conteinerLogIn" class="animate">
+        <h1>Log In</h1>
+        <!-- Input field for username -->
+        <input type="text" id="LogUserName" placeholder="  Username:  " required />
+        <i class='bx bxs-user'></i>
+        <br> <br>
+        <!-- Input field for password -->
+        <input type="password" id="LogPassword" placeholder="  Password:  " required />
+        <i class='bx bx-lock-alt'></i>
+        <br> <br>
+        <!-- Link to registration page -->
+        <p id="id_p">Don't have an account yet? Register now
+            <button id="id_button_in" onclick="Go_to_SignIn()">Sign in</button>
+        </p>
+        <!-- Log in button -->
+        <button id="button_in" onclick="log_in()">Log in</button>
+    </div>
+
+    <!-- Sign In Container -->
+    <div id="conteinerSignIn">
+        <h1>Sign In</h1>
+        <br> <br>
+        <!-- Input field for username during registration -->
+        <input type="text" id="userName" placeholder="  Username:" />
+        <i class='bx bxs-user'></i>
+        <br> <br>
+        <!-- Input field for password during registration -->
+        <input type="password" id="password" placeholder="  Password:" />
+        <i class='bx bx-lock-alt'></i>
+        <br> <br>
+        <!-- Input field for email during registration -->
+        <input type="email" id="email" placeholder="  Email:" />
+        <i class='bx bxs-envelope'></i>
+        <br>
+        <!-- Sign in button -->
+        <button id="button_in" onclick="sign_in()">Sign In</button>
+        <!-- Link to the login page -->
+        <p id="id_p">Do you already have an account?
+            <button id="id_button_in" onclick="Go_to_LogIn()">Log in</button>
+        </p>
+    </div>
+
+    <!-- Include your JavaScript file -->
+    <script src="index.js"></script>
+
+</body>
+
+
+</html>

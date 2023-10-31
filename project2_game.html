@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="project2_game.css">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Container for the game content -->
+  <div id="couteiner">
+    <!-- Monkey game section -->
+    <div id="monkey">
+      <h2>🐵</h2>
+      <button id="play"></button>
+    </div>
+  </div>
+
+  <!-- Instructions section -->
+  <div id="Instructions">
+    <h1>Welcome to the greatest play ever!!</h1>
+    <h4>Game Instructions:</h4>
+
+    <!-- List of game instructions -->
+    <ul>
+      <li>Click Start to start the game</li>
+      <li>Click Stop to stop the game</li>
+      <li>Click Record to see your previous record</li>
+      <li>You have 100 seconds to finish the game</li>
+      <li>You have to grab the fruits from below</li>
+      <li>Each fruit you catch earns you 10 points</li>
+      <li>Note: you must run away from the bombs, every bomb you meet will take 25 points away from you!</li>
+      <li>Note! If your score reaches minus you will not be able to continue playing</li>
+    </ul>
+
+    <!-- Button to acknowledge the instructions -->
+    <button id="OK" onclick="Instructionsoff()">OK, I got it</button>
+  </div>
+
+  <!-- Container for game details and controls -->
+  <div id="couteinerDetails">
+    <br><br>
+    <img id="img_user" src="imegs/משתמש במשחק.png" width="100px">
+    <br><br>
+    <div id="id_name_usesr"></div>
+    <div id="date-time"></div>
+    
+    <!-- Buttons for starting and stopping the game -->
+    
+    <button id="start_game" onclick="start()">Start Game</button>
+    <button id="game_over" onclick="over()">Stop Game</button>
+    <button id="id_Instructions" onclick="Instructionson()">Game Instructions</button>
+    <!-- Display user's record and scores -->
+    <div id="id_scors">
+      <table>
+        <tr>
+          <th>Your Record</th>
+          <th>Your Scores</th>
+        </tr>
+        <tr>
+          <td>
+
+            <!-- Button to view user's record -->
+            <div id="recordButton" onclick="record()">
+              <h6>Click here to<br>see your record</h6>
+            </div>
+          </td>
+          <td>
+            <p id="Score">0</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Timer display -->
+    <div id="timer"> the time that <br> left is: 100</div>
+
+    <!-- Exit display -->
+    <div id="Exit">
+      <button id="Exit_button" onclick="Exit()">Exit</button>
+    </div>
+
+  </div>
+
+  <script src="project2_game.js"></script>
+</body>
+
+</html>
